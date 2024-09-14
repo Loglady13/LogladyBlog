@@ -129,28 +129,30 @@ nav{
     justify-content: center;
 }
 
-  @media (max-width: 768px) {
-    .hero-image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 
-    .img-profile {
-        margin: 0 auto;
-        width: 300px !important;
-    }
-    .hero-section{
-      margin-top: 10px;
-      padding-bottom: 70px;
-      text-align: center;
-    }
-    .hero-content{
-      margin-top: 40px;
-    }
+
+@media (max-width: 768px) {
+  .hero-image {
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      
+  }
+
+  .img-profile {
+      margin: 0 auto;
+      width: 300px !important;
+
+  }
+  .hero-section{
+    padding-bottom: 70px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .hero-content{
+    margin-top: 40px;
+  }
 }
-
-  
 
 
 
@@ -570,6 +572,7 @@ a{
   }
 
   .map iframe {
+    margin-right: 0;
     width: 100%;
     height: 300px;
   }
@@ -719,7 +722,7 @@ footer p{
   
 }
 
-.comentarios {
+.comentarios,  .comentarios2, .comentarios3 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -739,7 +742,7 @@ footer p{
   color: #FFF;
 }
 
-.comentarios form{
+.comentarios form, .comentarios2 form, .comentarios3 form{
   padding-bottom: 10px;
 }
 
@@ -748,7 +751,7 @@ footer p{
 }
 
 /* Estilos para el formulario de comentarios */
-.comentarios {
+.comentarios, .comentarios2, .comentarios3 {
   margin-top: 30px;
   padding: 20px;
   background-color: #f8f9fa;
@@ -756,36 +759,38 @@ footer p{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.comentarios h3 {
+.comentarios h3, .comentarios2 h3, .comentarios3 h3 {
   color: #a4236c;
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 15px;
 }
 
-.comentarios form {
+.comentarios form, .comentarios2 form, .comentarios3 form {
   display: flex;
   flex-direction: column;
 }
 
-.comentarios .form-group {
+.comentarios .form-group, .comentarios2 .form-group, .comentarios3 .form-group {
   margin-bottom: 20px;
 }
 
 .comentarios input,
-.comentarios textarea {
+.comentarios textarea, .comentarios2 input,
+.comentarios2 textarea, .comentarios3 input,
+.comentarios3 textarea  {
   border: 1px solid #ced4da;
   border-radius: 4px;
   padding: 10px;
   font-size: 16px;
 }
 
-.comentarios textarea {
+.comentarios textarea, .comentarios2 textarea, .comentarios3 textarea {
   resize: none;
   height: 100px;
 }
 
-.comentarios button {
+.comentarios button,  .comentarios2 button, .comentarios3 button{
   background-color: #a4236c;
   color: #fff;
   padding: 10px 20px;
@@ -796,7 +801,7 @@ footer p{
   transition: background-color 0.3s ease;
 }
 
-.comentarios button:hover {
+.comentarios button:hover, .comentarios2 button:hover, .comentarios3 button:hover  {
   background-color: #8d2057;
 }
 
@@ -812,14 +817,14 @@ footer p{
   margin-bottom: 20px;
 }
 
-#lista-comentarios {
+#lista-comentarios,  #lista-comentarios2, #lista-comentarios3{
   padding: 20px;
   background-color: #f0f2f5;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-#lista-comentarios div {
+#lista-comentarios div,  #lista-comentarios2 div, #lista-comentarios3 div {
   padding: 15px;
   margin-bottom: 15px;
   background-color: #ffffff;
@@ -828,18 +833,18 @@ footer p{
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
-#lista-comentarios div strong {
+#lista-comentarios div strong, #lista-comentarios2 div strong, #lista-comentarios3 div strong  {
   font-size: 18px;
   color: #343a40;
 }
 
-#lista-comentarios div p {
+#lista-comentarios div p, #lista-comentarios2 div p, #lista-comentarios div p {
   margin-top: 10px;
   font-size: 16px;
   color: #495057;
 }
 
-#lista-comentarios hr {
+#lista-comentarios hr, #lista-comentarios2 hr, #lista-comentarios3 hr{
   border-color: #a4236c;
   margin-top: 15px;
   margin-bottom: 15px;
