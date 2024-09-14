@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar-expand-lg navbar" style="background-color: rgb(238, 214, 224);">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html" style="color: #a4236c;">Loglady</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="color: #a4236c;">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html#inicio">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./index.html#portafolio">Portafolio de proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./index.html#about-me">A cerca de mí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./index.html#blog" >Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./index.html#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <section class="blog-one" style="background-color: #ffff; margin-bottom: 0;">
+        <div class="img-container">
+            <h1>Buenas prácticas en JavaScript</h1>
+            <p><i class="fa-solid fa-clock"></i> Fecha de publicación: 12 de Septiembre, 2024</p>
+        </div>
+        <div class="blog-container container">
+            <p class="">
+                En los últimos años, el lenguaje de programación JavaScript se ha convertido en uno de los más populares y el más utilizado y aclamado para el desarrollo web,
+                gracias a su versatilidad, JavaScript se utiliza tanto del lado del cliente (Interactividad), como el lado del desarrollador (Dinamismo). Sin embargo, su flexibilidad
+                también puede llevar a malas prácticas si no se maneja con precaución. En el siguiente artículo te quiero compartir algunos consejos basados en mi experiencia Profesional
+                escribiendo código en JavaScript, sobre como escribir código de calidad.
+            </p>
+            <br>
+            <p class="">
+                A continuación, te dejaré 5 buenas prácticas que puedes manejar en tu código para mejorar como programador/programadora.
+            </p>
+            <h3 class="">1.Uso de valores let y const</h3>
+            <p>
+                Uno de los errores más comunes de los programadores es el uso excesivo de var, lo cuál puede generar problemas en nuestro código ya que var ignora ciertos bloques de código, debido a que, anteriormente JavaScript era limitado con respecto a su ambiente léxico.
+                Afotunadamente, hoy en día JavaScript posee "let" y "const", las cuales poseen un comportamiento más predecible en cuanto al alcance de variables.
+            
+                <ul>
+                    <br>
+                    <li>Const: Debes utilizarlo para valores no cambiantes, ya que te previene de sobreescribir accidentalmente la variable</li>
+                    <li>Let: Debes utilizarlos para valores cuyo valor puede cambiar conforme escribes tu código.</li>
+                </ul>
+            </p>
+            <h3>2.Uso de nombres adecuados en las variables: Descriptivos y concretos</h3>
+            <p>Los nombres de variables y funciones deben ser claros y autoexplicativos. 
+                Evita nombres ambiguos como a, b, foo, bar, y prefiere nombres que describan lo que la variable contiene o 
+                lo que la función hace, por ejemplo, si tienes una función que calcula un impuesto, puedes usar un nombre como calcularImpuesto, o si tienes una variable a la cual 
+                le quieres asignar el precio total de un producto, lo ideal es usar un nombre como precioTotal.
+                Esto no solo mejora la legibilidad del código, 
+                sino que también facilita la colaboración en proyectos más grandes.
+            </p>
+            <h3>3.Uso de Arrow Functions</h3>
+            <p>Las Arrow Functions (=>) tienen una sintaxis más corta en comparación con las funciones tradicionales, 
+                y ofrecen algunas ventajas específicas, como el manejo del contexto de this. las funciones flecha requieren menos líneas de código.
+                Uno de los aspectos más importantes de las arrow functions es cómo manejan el contexto de this. A diferencia de las funciones tradicionales, las arrow functions no crean su propio valor de this, 
+                sino que lo heredan del contexto en el que se definen. Esto es útil para evitar errores comunes al trabajar con este,  
+                siendo particularmente útiles al trabajar con callbacks o dentro de funciones anidadas.
+            </p>
+            <h3>4.Evitar el código repetido</h3>
+            <p>Uno de los principios fundamentales del desarrollo de software es Don't Repeat Yourself (DRY). 
+            Si ves que estás copiando y pegando código, probablemente deberías pensar en encapsularlo en una función reutilizable.</p>
+            <h3>5.Implementa desestructuración</h3>
+            <p>La desestructuración de objetos u arreglos es una característica útil que permite extraer valores de una manera más concisa y legible, 
+                esto es sumamente útil cuando trabajas con datos complejos, como respuestas de una API, en lugar de obtener valores a través de los índices, 
+                te permite asignar nombres para que sean fácil de identificar.</p>
+            <br>
+            <p>Programar no es sólamente crear código, es necesario crear un código entendible y legible, claro y adecuado para evitar errores desconocidos qué muchas veces nos quitan horas y horas de trabajo innecesarias.
+              Anímate e intenta aplicar estos consejos y vuélvete un mejor desarrollador de software!
+            </p>
+            <br>
+            <br>
+        </div>
+        <div class="comentarios">
+          <form id="comentariosForm">
+            <div class="form-group">
+              <input type="name" class="form-control input-nombre" id="nombre" placeholder="Nombre" required>
+              <textarea class="form-control" rows="3" id="comentario" placeholder="Deja un comentario..." required></textarea>
+            </div>
+            <button type="submit" class="btn">Enviar comentario</button>
+          </form>
+        </div>
+        
+        <!-- Sección donde se mostrarán los comentarios -->
+        <div class="comentarios-enviados mt-3">
+          <h3>Comentarios:</h3>
+          <div id="lista-comentarios"></div>
+        </div>
+    </section>
+    <footer>
+      <div class="footer">
+      <p>Todos los derechos reservados <br> &copy; <strong>Raschell Jarquin</strong></p>
+    </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
