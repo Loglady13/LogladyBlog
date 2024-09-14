@@ -129,20 +129,29 @@ nav{
     justify-content: center;
 }
 
-@media (max-width: 768px){
-  .hero-image{
-    margin-left: 35px;
-    padding-left: 10px;
-    width: 300px; 
-  }
-  .img-profile{
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
+  @media (max-width: 768px) {
+    .hero-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-  .hero-section{
-    padding-bottom: 70px;
-  }
+    .img-profile {
+        margin: 0 auto;
+        width: 300px !important;
+    }
+    .hero-section{
+      margin-top: 10px;
+      padding-bottom: 70px;
+      text-align: center;
+    }
+    .hero-content{
+      margin-top: 40px;
+    }
 }
+
+  
+
 
 
 span{
